@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --mainColor:#60768e;
+  --secondColor:#e7d0c3;
+  }
+
+.container{
+  width:1000px;
+  margin:0px auto;
+}
+
+
+/*Navbar Start*/
+
+.navbarBox{
+    background-color:rgba(255,255,255,0.70);
+    
+    
+}
+
+.logo{
+  max-width: 175px;
+  margin:auto;
+}
+
+.navbar{
+  
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  
+}
+.navbar a{
+  color:var(--mainColor) !important;
+}
+
+/*Navbar End*/
+
+.headerSection{
+align-items: center;
+background-image:  linear-gradient(to bottom, rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),url('../public/background.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height:100%;
+
+}
+
+
+
+
+
+
+
+.consultationBtn{
+text-decoration: none;
+color: black;
+background-color: var(--secondColor);
+font-size: 1rem;
+font-weight: 600;
+text-decoration: none;
+color:black;
+padding:0.3rem 1.8rem;
+}
+
+
+
+.uppertext{ /*spans upper the title*/
+  font-weight:200;
+  font-size:1rem;;
+
+}
+
+.headingh2{
+  font-family: 'Tajawal', sans-serif;
+  font-size:2.5rem;
+  font-weight:800;
+  line-height: 50pt;
+}
+
+.headingh3{
+  font-family: 'Tajawal', sans-serif;
+  font-size:2rem;
+  font-weight:600;
+  line-height: 50pt;
+}
+
+
+.underLinedText{
+  border-bottom: solid 2px var(--secondColor);
+  }
+  
+
+
+/*Header Content Start*/
+  .headerContent{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: 30px;
+}
+
+
+
+  
+  .headerContent h2{
+      font-size:90%cqw;
+      font-weight:800;
+      line-height:3rem;
+      text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .headerContent p{
+    margin-top: 1.2rem;
+    font-size:1.6rem;
+    text-align: justify;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+  .socialLinks i{
+      background-color:white;
+      color:var(--mainColor);
+      width:30px;
+      height:30px;
+      font-size:0.938rem;
+      line-height:30px;
+      
+  }
+  
+  .socialLinks i:hover{
+    background-color:var(--mainColor);
+    color:white;
+
+  
+  }
+
+/*Header Content End*/
+
+  
+/*Myservice section start*/
+.myServices{
+  height:100%;
+
+
+}
+
+
+
+
+.serviceImage{
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url('../public/img/services2.jpg');
+  max-height:75%;
+  border-radius: 25px;
+  width:225px;
+  height:225px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+
+  
+  .consutationTypes{
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/img/danamcneil_work_2.jpg');
+      background-position: center;
+      background-size: cover;
+      
+  }
+  
+  .consutationTypes .col-md-6:hover i{
+      font-size:3rem;
+      color:var(--mainColor);
+      background-color:var(--secondColor);
+  
+  }
+  
+  
+  
+  .consutationTypes i{
+  font-size:1.875rem;
+  background-color:#fff;
+  padding:1.3rem;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  line-height: 50px;
+  color:var(--mainColor);
+  
+  }
+  
+  
+  .consutationTypes h3{
+  color:white;
+  font-weight: 800;
+  line-height: 3rem;
+  text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .consutationTypes p{
+      color:white;
+      margin-top: 1.2rem;
+    font-size: 1.6rem;
+    text-align: justify;
+    text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+
+      }
+      
+
+
+  /*Myservice section End*/
+  
+  
+  /*blog section start*/
+  .blog img:hover{
+  border-radius: 20px;
+  }
+  
+  
+  /*blog section end*/
+  /*Media start*/
+  .circle-rt{
+      right: -20%;
+      width: 40%;
+      position: absolute;
+      z-index: -1;
+      top:0;
+      bottom:0;
+      margin:auto;
+  
+  }
+  .circle-lt{
+      left: -20%;
+      width: 40%;
+      position: absolute;
+      z-index: -1;
+      top:0;
+      bottom:0;
+      margin:auto;
+  
+  }
+  
+  
+  .mediaTitle{
+      font-size:2.5rem;
+      font-family: 'Tajawal', sans-serif;
+      color: #e6a678;
+  }
+  
+  .mediaSectionimages{
+      width:270px;
+  }
+  /*Media Ends*/
+  
+  
+  
+  /* Footer Section Start*/
+  footer{
+      background-color: var(--secondColor);
+      color:var(--mainColor);
+  
+      
+  }
+  
+  .pattern{
+      background-color: #e7d0c3;
+      background-image: linear-gradient(0deg, #e7d0c3 0%, #FFDEE9 100%);
+      
+  }
+  /* Footer Section End*/
+  
+  
+  .blogthumbnail{
+      width:200px;
+      height:150px;
+  }
+  
+  
+  .add-course label{
+      padding-top:0.6rem;
+      padding-bottom: 0.3rem;
+      color:#60768e;
+  }
+  
+  
+  .textJustify{
+      text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .tab-content img{
+      padding-bottom:0.6rem;
+  }
+  
+  
+  .tab-content h3{
+      color:#60768e;
+      font-family: 'Tajawal', sans-serif;
+      font-size:1.25rem;
+      font-weight:600;
+      
+  }
+  
+  .nav-link{
+      color:#60768e !important;
+      font-family: 'Tajawal', sans-serif !important;
+      font-weight:600 !important;
+  }
+  
+
+  /*Section Header Start*/
+  .sectionHeader{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .sectionHeaderTitle{
+    color:var(--mainColor);
+
+  }
+
+  .sectionHeaderDetails{
+    font-size: 1.2rem;
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.8rem;
+    font-weight: 500;
+    padding: 0.6rem;
+
+  }
+  /*Section Header End*/
+
+.dflex-centerd{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+  /*Courses Section*/
+  .courseImage{
+    width:300px;
+    height:200px;
+    background-image: url(../public/img/courses1.jpg);
+    background-size: contain;
+    
+  }
+
+/* General classes*/
+  .sectionChildTitle{
+    color: #60768e;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+.sectionChilddetails{
+    font-size: 1.2rem;
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.8rem;
+    font-weight: 400;
+    padding: 0.6rem;
+    text-align:center;
+}
+
+.podcastsection{
+  margin-top:40px;
+}
+
+
+
+.podcastimage{
+width:100%;
+height:100%;
+
+}
+
+.album{
+  position:relative;
+}
+
+
