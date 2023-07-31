@@ -405,12 +405,12 @@ height:100%;
 
 
 
-@media  (max-width: 1000px) {
-  body {
+@media only screen and (max-width: 1000px) {
+ 
     .container{
       width:100%;
     }
-  }
+  
 
   html {
     font-size: calc(15px + 0.390625vw);
