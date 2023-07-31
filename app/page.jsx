@@ -20,7 +20,7 @@ const homePage = () => {
       animate={{ opacity: 1, scale: 10 }}
       transition={{ duration: 0.5 }}
 />
-<section className="headerSection d-flex p-5">
+<section className="headerSection d-flex">
   <div className="container">
           <div className="headerContent"> 
               <h2>هناك أوقات نتعثر فيها ونحتاج أن نجلب الشمس للعلاقة </h2>

@@ -12,7 +12,9 @@ body {
 
 html{
   scroll-behavior: smooth;
+  font-size: 16px;
 }
+
 :root{
   --mainColor:#60768e;
   --secondColor:#e7d0c3;
@@ -114,17 +116,18 @@ padding:0.3rem 1.8rem;
     justify-content: center;
     align-items: center;
     height: 80%;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 
 
   
   .headerContent h2{
-      font-size:90%cqw;
+      font-size:2rem;
       font-weight:800;
       line-height:3rem;
       text-shadow: 2px 2px 4px #000000;
+      text-align: center;
   }
   
   .headerContent p{
@@ -401,3 +404,15 @@ height:100%;
 }
 
 
+
+@media  (max-width: 1000px) {
+  body {
+    .container{
+      width:100%;
+    }
+  }
+
+  html {
+    font-size: calc(15px + 0.390625vw);
+}
+}

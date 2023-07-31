@@ -16,6 +16,13 @@ import Image from 'next/image';
 
 export const InstagramPosts = () => {
 
+  const imageStyle = {
+    width: '100%',
+    height: '100%',
+    
+  }
+
+
   const stories=[
     {'slideId':'1',
     'slideImages':[
@@ -68,7 +75,7 @@ export const InstagramPosts = () => {
     </div>
 
       <div className="row">
-
+      
       
       
       {stories.map((ele)=>{
@@ -79,7 +86,7 @@ export const InstagramPosts = () => {
        
        <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
+            spaceBetween={20}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
@@ -94,7 +101,7 @@ export const InstagramPosts = () => {
        
           {
              ele.slideImages.map((image)=>
-                <div>
+                <div className="posts">
                                          
           
                       <SwiperSlide>
@@ -102,6 +109,7 @@ export const InstagramPosts = () => {
                               src={image.src}
                               width={300}
                               height={300}
+                              style={imageStyle}
                               alt="Picture of the author"
                               />
                       </SwiperSlide>
@@ -131,7 +139,7 @@ export const InstagramPosts = () => {
              
           
          
-         
+
        </div>
       
       
