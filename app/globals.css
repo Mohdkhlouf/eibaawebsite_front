@@ -404,6 +404,14 @@ height:100%;
 }
 
 
+.motionbox{
+  background-color:#60768e;
+  width:300px;
+  height:300px;
+  text-align: center;
+  opacity: 0.2;
+}
+
 
 @media only screen and (max-width: 1000px) {
  

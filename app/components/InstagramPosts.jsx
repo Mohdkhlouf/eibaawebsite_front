@@ -1,7 +1,6 @@
 import React from 'react'
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -65,12 +64,12 @@ export const InstagramPosts = () => {
 
   return (
     
-<section className="instagramPosts">
+<section className="instagramPosts" id="instagramPosts"> 
     <div className="container">
        <div className="row">
       <div className='sectionHeader'>
         <h2 className="sectionHeaderTitle ">Stories</h2>
-        <p className="sectionHeaderDetails ">أقدمها للأشخاص في مرحلة</p>
+        <p className="sectionHeaderDetails ">من وحي قلمي في انستاجرام</p>
       </div>
     </div>
 

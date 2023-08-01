@@ -1,20 +1,11 @@
-'use client'
-
 import React from 'react'
-import { SocialMediaLinks } from './components/SocialMediaLinks'
-import { Services } from './components/Services'
-import { PodcastSection } from './components/PodcastSection'
-import { InstagramPosts } from './components/InstagramPosts'
+import { SocialMediaLinks } from './SocialMediaLinks'
 
-
-
-const homePage = () => {
-
+export const HeaderContent = () => {
   return (
-    <>
-
-<section className="headerSection d-flex">
+    <section className="headerSection d-flex">
   <div className="container">
+
           <div className="headerContent"> 
               <h2>هناك أوقات نتعثر فيها ونحتاج أن نجلب الشمس للعلاقة </h2>
               <h2> إذا كنت مستعداً فأنت في المكان الصحيح! </h2>
@@ -32,14 +23,5 @@ const homePage = () => {
   
   
 </section>
-<Services />
-                
-<PodcastSection />
-
-<InstagramPosts />
-
-</>
   )
 }
-
-export default homePage

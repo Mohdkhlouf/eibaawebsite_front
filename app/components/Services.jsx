@@ -64,7 +64,7 @@ export const Services = () => {
   <div className="container">
     <div className="row p-4">
             <div className="col-md-12 text-center bg-color1 py-5">
-            <i class="fa-solid fa-handshake-angle"></i>
+            <i className="fa-solid fa-handshake-angle"></i>
               <h3 className="headingh3 text-center">جلسات دعم جماعية للنساء</h3>
               <p text-justify>تُقدم هذه الجلسات الدعم الجمعي للنساء في مجالات الحياة المختلفة (العاطفية، النفسية، الجسدية، المهنية، الزوجية، الوالدية) عبر حوار شفاف وعميق، يساعدهنّ على الوصول لأعمق نقطة في داخلهنّ، لتوسيع مساحات النموّ الحقيقي، وتعزيز قدرتهنّ على اتخاذ خيارات أكثر سعة وحكمة بشأن حياتهنّ الخاصة،
  في فضاء أنثوي يخبرهنّ أنهنّ

@@ -40,7 +40,7 @@ export const Header = () => {
           </li>
 
           <li className="nav-item m-1">
-            <Link className="nav-link" href="#instagramposts">Stories</Link>
+            <Link className="nav-link" href="#instagramPosts">Stories</Link>
           </li>
           
           <li className="nav-item m-1">
