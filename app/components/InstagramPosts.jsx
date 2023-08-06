@@ -83,7 +83,11 @@ export const InstagramPosts = () => {
       {stories.map((ele)=>{
        
       return <div className="col-md-4">
-          <div className="album">
+          <motion.div
+          initial={{opacity:0,scale:0}}
+          whileInView={{opacity:1,scale:1}}
+          transition={{duration:0.75,type:"tween"}}
+          className="album">
 
        
        <Swiper
@@ -122,6 +126,7 @@ export const InstagramPosts = () => {
              )
              }
              </Swiper>
+             </motion.div>
 
              <div className="albumoverlay">
               
@@ -130,7 +135,7 @@ export const InstagramPosts = () => {
 
 
 
-             </div>
+             
 
              
 

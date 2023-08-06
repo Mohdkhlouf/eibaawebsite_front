@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import Link from 'next/link';
 export const Services = () => {
   const services=[
     {
@@ -51,7 +52,12 @@ export const Services = () => {
     {
   services.map( (element)=>
 
-<div className="col-md-4 dflex-centerd{">
+<motion.div
+initial={{opacity:0,scale:0}}
+whileInView={{opacity:1,scale:1}}
+transition={{duration:0.75,type:"tween"}}
+
+className="col-md-4 dflex-centerd{">
   
           <div className='dflex-centerd'>
               <div className="serviceImage">
@@ -60,7 +66,7 @@ export const Services = () => {
               <h3 className='serviceTitle sectionChildTitle'> {element.slug} </h3>
               <p className='serviceDetails sectionChilddetails'>{element.details}</p>
             </div>
-        </div>
+        </motion.div>
   )
 }
 
@@ -74,12 +80,12 @@ export const Services = () => {
     <div className="row p-4">
             <div className="col-md-12 text-center bg-color1 py-5">
             <i className="fa-solid fa-handshake-angle"></i>
-              <h3 className="headingh3 text-center">جلسات دعم جماعية للنساء</h3>
-              <p text-justify>تُقدم هذه الجلسات الدعم الجمعي للنساء في مجالات الحياة المختلفة (العاطفية، النفسية، الجسدية، المهنية، الزوجية، الوالدية) عبر حوار شفاف وعميق، يساعدهنّ على الوصول لأعمق نقطة في داخلهنّ، لتوسيع مساحات النموّ الحقيقي، وتعزيز قدرتهنّ على اتخاذ خيارات أكثر سعة وحكمة بشأن حياتهنّ الخاصة،
+              <h3 className=" headingh3 text-center">جلسات دعم جماعية للنساء</h3>
+              <p className="womenSupprot" text-justify>تُقدم هذه الجلسات الدعم الجمعي للنساء في مجالات الحياة المختلفة (العاطفية، النفسية، الجسدية، المهنية، الزوجية، الوالدية) عبر حوار شفاف وعميق، يساعدهنّ على الوصول لأعمق نقطة في داخلهنّ، لتوسيع مساحات النموّ الحقيقي، وتعزيز قدرتهنّ على اتخاذ خيارات أكثر سعة وحكمة بشأن حياتهنّ الخاصة،
  في فضاء أنثوي يخبرهنّ أنهنّ
 </p>
               <div className="reserveConsultation border-2 rounded-pill p-2">
-                <a className="consultationBtn " href>اقرأ المزيد</a>
+                <Link className="consultationBtn " href="/Consultation">اقرأ المزيد</Link>
               </div> 
             </div>
             

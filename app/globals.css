@@ -35,6 +35,7 @@ html{
     background-color:rgba(255,255,255);
     position:sticky;
     top:0;
+    z-index: 500;
    
     
     
@@ -52,7 +53,7 @@ html{
   font-size: 1.125rem;
   
 }
-.navbar a{
+.navba-link{
   color:var(--mainColor) !important;
 }
 
@@ -100,7 +101,6 @@ padding:0.3rem 1.8rem;
 }
 
 .headingh3{
-  font-family: 'Tajawal', sans-serif;
   font-size:2rem;
   font-weight:600;
   line-height: 50pt;
@@ -127,7 +127,7 @@ padding:0.3rem 1.8rem;
 
   
   .headerContent h2{
-      font-size:2rem;
+      font-size:1.5rem;
       font-weight:800;
       line-height:3rem;
       text-shadow: 2px 2px 4px #000000;
@@ -136,7 +136,7 @@ padding:0.3rem 1.8rem;
   
   .headerContent p{
     margin-top: 1.2rem;
-    font-size:1.6rem;
+    font-size:1.3rem;
     text-align: justify;
     text-shadow: 2px 2px 4px #000000;
 
@@ -188,7 +188,7 @@ padding:0.3rem 1.8rem;
 
   
   .consutationTypes{
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/img/danamcneil_work_2.jpg');
+      background-color: var(--secondColor);
       background-position: center;
       background-size: cover;
       
@@ -217,18 +217,18 @@ padding:0.3rem 1.8rem;
   
   
   .consutationTypes h3{
-  color:white;
+  color:var(--mainColor);
   font-weight: 800;
   line-height: 3rem;
-  text-shadow: 2px 2px 4px #000000;
+  
   }
   
   .consutationTypes p{
-      color:white;
+    color:var(--mainColor);
       margin-top: 1.2rem;
     font-size: 1.6rem;
     text-align: justify;
-    text-shadow: rgb(0, 0, 0) 2px 2px 4px;
+    
 
       }
       
@@ -419,6 +419,9 @@ height:100%;
   width:200px;
   height:200px;
 }
+
+
+
 
 @media only screen and (max-width: 1000px) {
  

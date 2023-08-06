@@ -26,7 +26,7 @@ export const Header = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav me-auto d-flex">
           <li className="nav-item active">
-            <Link className="nav-link m-1" href="/">الصفحة الرئيسية <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link m-1" href="./">الصفحة الرئيسية <span className="sr-only">(current)</span></Link>
           </li>
 
           <li className="nav-item m-1">

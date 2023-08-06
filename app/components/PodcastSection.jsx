@@ -28,19 +28,7 @@ export const PodcastSection = () => {
 
     <div className="row">
 
-    <div className="col-md-6">
-      <Image
-      src="/podcast.jpg"
-      width={400}
-      height={400}
-      style={imageStyle}
-      alt="Picture of the author"
-    />
-      </div>
-
-
-
-      <div className="col-md-6">
+         <div className="col-md-12">
       <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay"
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/1176891079&amp;">
 </iframe>
