@@ -2,7 +2,7 @@ import React from 'react'
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import {motion} from 'framer-motion'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -64,7 +64,10 @@ export const InstagramPosts = () => {
 
   return (
     
-<section className="instagramPosts" id="instagramPosts"> 
+<motion.section className="instagramPosts p-5" id="instagramPosts"
+ initial={{y:25, opacity:0}}
+ whileInView={{y:0, opacity:1}}
+ transition={{duration:0.75}}> 
     <div className="container">
        <div className="row">
       <div className='sectionHeader'>
@@ -144,6 +147,6 @@ export const InstagramPosts = () => {
       
    
     </div>
-    </section>
+    </motion.section>
   )
 }

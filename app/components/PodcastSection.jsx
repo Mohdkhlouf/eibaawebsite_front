@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 export const PodcastSection = () => {
   const imageStyle = {
     width: '100%',
@@ -10,12 +11,18 @@ export const PodcastSection = () => {
 
 
   return (
-   <section className="podcastsection" id="podcastsection">
+   <motion.section className="podcastsection" id="podcastsection"
+   initial={{y:25, opacity:0}}
+   whileInView={{y:0, opacity:1}}
+   transition={{duration:0.75}}>
     <div className="container"> 
+    
     <div className="row">
       <div className='sectionHeader'>
         <h2 className="sectionHeaderTitle">Podcast موجة حب</h2>
-        <p className="sectionHeaderDetails">اقدم العديد من الدورات </p>
+        <p className="sectionHeaderDetails">
+         موجات حب.. اليكم مباشرة
+           </p>
       </div>
     </div>
 
@@ -48,6 +55,6 @@ export const PodcastSection = () => {
 
 </div>
 </div>
-   </section>
+   </motion.section>
   )
 }

@@ -8,6 +8,9 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100%;
+  scroll-padding-top: 95px;
+  
 }
 
 html{
@@ -29,7 +32,10 @@ html{
 /*Navbar Start*/
 
 .navbarBox{
-    background-color:rgba(255,255,255,0.70);
+    background-color:rgba(255,255,255);
+    position:sticky;
+    top:0;
+   
     
     
 }
@@ -58,7 +64,6 @@ background-image:  linear-gradient(to bottom, rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-height:100%;
 
 }
 
@@ -115,8 +120,7 @@ padding:0.3rem 1.8rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    padding: 1.875rem;
+
 }
 
 
@@ -160,7 +164,7 @@ padding:0.3rem 1.8rem;
   
 /*Myservice section start*/
 .myServices{
-  height:100%;
+  
 
 
 }
@@ -411,7 +415,10 @@ height:100%;
   text-align: center;
   opacity: 0.2;
 }
-
+.square{
+  width:200px;
+  height:200px;
+}
 
 @media only screen and (max-width: 1000px) {
  

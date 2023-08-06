@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {motion} from 'framer-motion'
 export const Services = () => {
   const services=[
     {
@@ -26,7 +26,16 @@ export const Services = () => {
 
  return (
   
-<section id="myServices" className="myServices py-5">
+<motion.section id="myServices" className="myServices py-5"
+
+  initial={{y:25, opacity:0}}
+  whileInView={{y:0, opacity:1}}
+  transition={{duration:0.75}}
+
+
+
+
+>
   <div className="container">
     
     
@@ -77,7 +86,7 @@ export const Services = () => {
           </div>
           </div>
       </div>
-</section>
+</motion.section>
 
 
 
