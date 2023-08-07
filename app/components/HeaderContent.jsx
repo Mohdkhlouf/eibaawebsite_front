@@ -30,7 +30,8 @@ export const HeaderContent = () => {
     transition={{duration:0.75}}>
   <div className="container">
 
-          <div className="headerContent p-5"  ref={scrollRef}> 
+          <div className="headerContent p-5 text-end"  ref={scrollRef}>
+            <div className="content">
           
         <motion.h2
             initial={{
@@ -138,6 +139,8 @@ export const HeaderContent = () => {
             
             <SocialMediaLinks />
             </div>
+            </div>
+
           </div>  
                
 
